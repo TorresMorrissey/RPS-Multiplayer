@@ -1,0 +1,120 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="Train Time Site Choo. Choo!">
+  <meta name="choochoo" content="SitePoint">
+
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	
+
+	<!-- Link to Stylesheet -->
+  	<link rel="stylesheet" href="assets/css/style.css">	
+
+</head>
+<body>
+
+
+
+<!-- 	Jumbotron Container  -->
+	<div class="jumbotron">
+	  <h1>GET ON THE FUNK TRAIN</h1>
+	  <p>Give us the funk!</p>
+	</div>
+
+<!-- Main container for bootstrap -->
+<div class="container">
+<!--  Generated Table -->
+    <div class="row">
+		<div class="col-lg-12">
+
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Current Train Schedule</h3>
+				</div>
+
+				<div class="panel-body">
+						<table class="table table-hover">
+							  <thead>
+								    <tr>
+								      <th>Train Name</th>
+								      <th>Destination</th>
+								      <th>Frequency (min)</th>
+								      <th>Next Arrival</th>
+								      <th>Minutes Away</th>
+								    </tr>
+							  </thead>
+
+							  <tbody class="trainInformation">
+							  </tbody>
+						</table>
+				</div>
+			</div>
+		</div>	
+	</div> <!-- <div class="row"> -->
+
+
+	<!-- Form Section -->
+	<div class="row">
+		<div class="col-lg-12">
+			<div class="panel panel-info">
+				<div class="panel-heading">
+					<h3 class="panel-title">Add Train</h3>
+				</div>
+				<div class="panel-body">
+					<form>
+						<div class="form-group"> <!-- Input for Train Names  -->
+							<label for="traineName">Train Name</label>
+							<input type="text" class="form-control" id="trainName">
+						</div>
+						<div class="form-group"> <!-- Input for Destinations -->
+							<label for="destination">Destination</label>
+							<input type="text" class="form-control" id="destination">
+						</div>	
+						<div class="form-group"> <!-- First Train Time  -->
+							<label for="firstTrainTime">First Train Time (00:00 - military time)</label>
+							<input type="text" class="form-control" id="firstTrainTime">
+						</div>	
+						<div class="form-group"> <!-- Frequency of Train Arrivals -->
+							<label for="frequency">Frequency (min)</label>
+							<input type="text" class="form-control" id="frequency">
+						</div>	
+						<button id="submit" type="submit" class="btn btn-info">Submit</button>
+					</form>
+
+				</div>
+			</div>
+		</div>	
+	</div> <!-- <div class="row"> -->
+
+</div> <!--  <div class="container"> -->
+
+	<!-- Latest compiled and minified CSS & JS -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+
+	<!-- Link to firebase data  -->
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+
+	<!-- Added Moment JS -->
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+	<!-- Link to JavaScript File -->
+ 	<script src="assets/javascript/style.js"></script>
+
+<script>
+</script>
+
+</body>
+</html>
